@@ -55,7 +55,7 @@
 }
 
 .main_grid{
-    background-image: url("/img/pexels-igor-haritanovich-16950522.png");
+    background-image: url(/img/indexbg.png);
     background-size: cover;
     background-repeat: no-repeat;
     display: grid;
