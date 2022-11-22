@@ -81,9 +81,77 @@ footer{
 }
 
 .comment{
+    max-width: 1920px;
     font-size: 16px;
     text-align: center;
-    margin: 0 auto;
+ 
     background-color: rgba(167,115,68,0.58);
     color: #fff;
+}
+
+@media screen and (max-width: 428px) {
+    
+    footer {
+        height: 70vh;
+    }
+
+    .footer_content{
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .footer_logo img{
+        width: 20vw;
+        margin: 0 auto;
+    }
+
+    .footer_left h2{
+        font-size: 16px;
+        display: none;
+    }
+
+    .footer_left h3{
+        text-align: center;
+        margin-top: 20px;
+        font-size: 12px;
+    }
+    .footer_left h4{
+        text-align: center;
+        margin-top: 20px;
+        font-size: 12px;
+    }
+
+    .footer_left{
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .footer_right{
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .footer_right h2{
+        font-size: 15px;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .footer_right h3{
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .footer_right a{
+        /* text-align: center; */
+        margin-left: 120px;
+    }
+
+    .comment{
+        padding: 0 10px;
+    }
+
+
 }

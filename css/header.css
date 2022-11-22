@@ -1,13 +1,14 @@
 
 .header{
+
     width: 100%;
-    background-color: rgba(167,115,68,0.58);
+    background-color: rgba(167,115,68,0.9);
     height: 110px;
     position: fixed;
 }
 
 .header-wrapper{
-    width: 1920px;
+    width: 100%;
     height: 110px;
     margin: 0 auto;
     display: flex;
@@ -79,11 +80,24 @@
         font-size: 20px;
     }
 
+    .nav a:hover{
+        color: tomato;
+    }
+   
+    .top-icon{
+        display: flex;
+        width: 125px;
+        margin-left: 30px;
+    }
+    .nav-item:hover .second_nav{
+        display: block;
+    }
     .second_nav{
         display: none;
         position: absolute;
     }
-    
+
+
     .second_nav ul{
         margin: 0;
         display: flex;
@@ -129,4 +143,138 @@
     .top-icon .fa-solid{
         width: 23.5px;
         height: 21px;
+    }
+
+    
+.hamBar_wrapper{
+    display: none;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+}
+
+.hamBar{
+    display: block;
+    color: white;
+}
+
+    @media screen and (max-width: 428px)
+    {
+
+        .header{
+            max-width: 428px;
+            width: 100%;
+            height: 65px;
+        }
+    
+        .header-wrapper{
+            max-width: 428px;
+            width: 100%;
+            margin: 0 auto;
+            justify-content: space-between;
+            position: fixed;
+            z-index: 5;
+        }
+    
+        .logo-a{
+            width: 50px;
+        }
+    
+        .logo{
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+    
+        .hamBar_wrapper{
+            display: block;
+            max-width: 20px;
+            align-items: center;
+            padding-right: 20px;
+            padding-top: 20px;
+        } 
+    
+        
+        .nav{
+      
+            display: flex;
+            opacity: 0;
+            margin: auto;
+            position: absolute;
+            top: 65px;
+            width: 100%;
+            background-color: #be9c79;
+            pointer-events: none;
+            transition: opacity 0.3s ease-in;
+        }
+    
+        .nav_show{
+            opacity: 1;
+            transition: opacity 0.5s ease-in;
+            pointer-events: auto;
+        }
+    
+        .nav-ul{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+        }
+    
+        .nav li a{
+            font-size: 15px;
+        }
+    
+        .drop_down{
+            padding-left: 15px;
+        }
+    
+        .top-icon{
+            margin: auto;
+        }
+    
+        .second_nav{
+            position: static;
+            flex-direction: column;
+            max-width: 414px;
+            width: 414px;
+            margin: 0;
+            text-align: center;
+        }
+    
+        .second_nav ul li{
+            width: 100%;
+        }
+    
+        .second_nav ul li a{
+            line-height: 50px;
+            font-size: 12px;
+            text-align: center;
+        }
+    
+        .nav-item{
+            width: 100%;
+        }
+    
+        .nav-item::after{
+            display: none;
+        }
+    
+        .sideInner{
+            z-index: 2;
+            position: fixed;
+            background-color: rgba(0, 0, 0, 0.5);
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    
+        .nav a:hover{
+            color: white;
+        }
+    
+        .top-icon a:hover{
+            color: white;
+        }
     }

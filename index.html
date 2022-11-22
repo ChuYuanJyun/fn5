@@ -10,81 +10,93 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
+
 </head>
 <body>
     <nav class="header">
         <div class="header-wrapper">
             <a class="logo-a" href="index.html">
-                <img class="logo" src="./img/ouyu.png" alt="">
+                <img class="logo" src="img/ouyu.png" alt="">
             </a>
-        
+            <div class="hamBar_wrapper"><a class="hamBar" href="#"><i class="fa-solid fa-bars"></i></a></div>
             <section class="nav">
                 <ul class="nav-ul">
-                    <li class="nav-item"><a href="/productList.html">咖啡豆</a></li>
+                    <li class="nav-item"><a href="productList.html">咖啡豆</a></li>
                         <div class="second_nav" style="display: none ;">
                         <ul>
-                            <li><a href="/productList.html">咖啡用品</a></li>
-                            <li><a href="/productPage.html">商品頁面</a></li>
-                            <li><a href="/beansCart.html">購物車</a></li>
+                            <li><a href="productList.html">咖啡用品</a></li>
+                            <li><a href="productPage.html">商品頁面</a></li>
+                            <li><a href="beansCart.html">購物車</a></li>
                         </ul>
                         </div>
                     </li>
-                    <li class="nav-item"><a href="/businessPhilosophy.html">經營理念</a></li>
-                    <li class="nav-item"><a href="/businessCooperation.html">商業合作</a></li>
+                    <li class="nav-item"><a href="businessPhilosophy.html">經營理念</a></li>
+                    <li class="nav-item"><a href="businessCooperation.html">商業合作</a></li>
                     <li class="nav-item"><a href="#">聯絡資訊</a></li>
-                   
-                    <li class="nav-item"><a href="/coffeeKnowledge.html">咖啡知識</a>
-                        <div class="second_nav" style="display: none;">
-
-
-                        </div>
+                    <li class="nav-item"><a href="coffeeKnowledge.html">咖啡知識</a>
                     </li>
 
                                 <ul class="top-icon">
-                                    <li><a href="/beansCart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
-                                    <li><a href="/login.html"><i class="fa-solid fa-circle-user"></i></a></li>
+                                    <li><a href="beansCart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                                    <li><a href="login.html"><i class="fa-solid fa-circle-user"></i></a></li>
                                 </ul>
                 </ul>         
             </section>
         </div>
         </nav>
-       
-        <section class="main_grid">
-            <button class="chioce1">淺焙</button>
-            <button class="chioce2">淺中焙</button>
-            <button class="chioce3">中焙</button>
-            <button class="chioce4">中深焙</button>
-            <button class="chioce5">深焙</button>
-            <button class="chioce6">帶您選擇</button>
-            <img class="main_logo" src="./img/Ellipse 1.png" alt="" srcset="">
-        </section>
-
-        <section class="mid">
-            <h1>近期活動</h1>
-            <ul>
-                <li>
-                  <a class=p1 href="#">
-                    <img src="./img/pexels-anna-tukhfatullina-food-photographerstylist-2638019.jpg" alt="">
-                  </a>
-                </li>
-                <li>
-                  <a class=p1 href="#">
-                    <img src="./img/e1.jpg" alt="">
-                  </a>
-                </li>
-                <li>
-                  <a class=p1 href="#">
-                    <img src="./img/e2.jpg" alt="">
-                  </a>
-                </li>
  
-              </ul>
+        <section class="main_grid">
+            <button class="chioce1"><a href="productList.html">淺焙</a>
+            </button>
+            <button class="chioce2"><a href="productList.html">淺中焙</a>
+            </button>
+            <button class="chioce3"><a href="productList.html">中焙</a>
+            </button>
+            <button class="chioce4"><a href="productList.html">中深焙</a>
+            </button>
+            <button class="chioce5"><a href="productList.html">深焙</a>
+            </button>
+            <button class="chioce6"><a href="productList.html">帶您選擇</a></button>
+            <img class="main_logo" src="img/Ellipse 1.png" alt="" srcset="">
+
         </section>
+        <section>       
+            <img class="rwd_logo" src="img/Ellipse 1.png" alt="" srcset="" style="display: none ;">
+        </section>
+ 
+        <div class="swiper mySwiper">
+            <h1>近期活動</h1>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <picture>
+                        <source media="( max-width: 428px )" srcset="img/i01.jpg">
+                        <img class="home_top_img" src="img/i01.jpg" alt="">
+                    </picture>
+                </div>
+                <div class="swiper-slide">
+                    <picture>
+                        <source media="( max-width: 428px )" srcset="img/i02.jpg">
+                        <img class="home_top_img" src="img/i02.jpg" alt="">
+                    </picture>
+                </div>
+                <div class="swiper-slide">
+                    <picture>
+                        <source media="( max-width: 428px )" srcset="img/i03.jpg">
+                        <img class="home_top_img" src="img/i03.jpg" alt="">
+                    </picture>
+                </div>
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    
 
         <footer>
             <div class="footer_content"> 
                 <div class="footer_logo">
-                    <img src="./img/ouyu.png" alt="">
+                    <img src="img/ouyu.png" alt="">
                 </div>
                 <div class="footer_left">
                     <h2>OUYU</h2>
@@ -104,5 +116,29 @@
             </div>
         </footer>
         <p class="comment">本網站為緯育TibaMe前端工程師班第80期學員專題作品，本平台僅供學習、展示之用。參考資源: XXXXX。</p>
-</body>
+       
+        <link rel="stylesheet" href="./cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+        <script src="./cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+       <script>
+            var swiper = new Swiper(".mySwiper", {
+                spaceBetween: 30,
+                centeredSlides: true,
+                autoplay: {
+                    delay: 1500,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
+
+
+        </script>
+
+    </body>
 </html>

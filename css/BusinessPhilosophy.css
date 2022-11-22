@@ -8,17 +8,19 @@ align-items: center;
 justify-content: center;
 margin-bottom: 40px;
 }
+
 h1{
     font-size: 80px;
     color:wheat;
     margin-top: 20px;
 
 }
+
 .Business_philosophy_bg_main h2{
     font-size: 32px;
     text-align: center;
     
-    padding-top: 20px;
+    padding-top: 10px;
 }
 
 .Business_philosophy_bg_main{
@@ -27,7 +29,11 @@ h1{
 
 }
 
-.Business_philosophy_bg_img img{
+.bpimg{
+    display: block;
+    max-width: 428px;
+    width: 100%;
+    text-align: center;
     margin: 0 auto;
     height: 400px;
 
@@ -37,6 +43,8 @@ h1{
     padding-top: 20px;
     /* text-align:left;   */
     /* text-align: justify; */
-    font-size: 40px;
-    padding-bottom: 10px;
+    font-size: 20px;
+    margin: 0 10px 0 10px;
+    padding-bottom: 20px;
+    text-align:center ;
 }
