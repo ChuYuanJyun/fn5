@@ -1,7 +1,7 @@
 .member_top_bg{
     display: flex;
     height: 400px;
-    background-image: url("/img/L01.jpg");
+    background-image: url("../img/L01.jpg");
     background-size: cover;
     background-position: 0 center;
     align-items: center;
